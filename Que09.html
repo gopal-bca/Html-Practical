@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Hover Menu Overlay</title>
+<style>
+/* Basic CSS for styling */
+.container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://img.freepik.com/free-vector/celebrate-world-smile-day-event-with-laughing-hanging-mouth-vector_1017-46372.jpg?w=900&t=st=1706363960~exp=1706364560~hmac=c46405130f884467f1a87f31ed2f688550e049f21fcfed313840a882901ccb3a" alt="Your Image" class="image">
+  <div class="overlay">
+    <div class="menu">
+      <h2>Menu Overlay</h2>
+      <p>This is your menu content.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

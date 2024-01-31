@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customized Inline Quotation Marks</title>
+<style>
+    /* Custom CSS for styling */
+.custom-quote {
+  position: relative;
+  font-style: italic;
+  margin: 0;
+}
+
+.custom-quote::before,
+.custom-quote::after {
+  content: '"';
+  font-size: 2em; /* Adjust size as needed */
+  color: #999; /* Adjust color as needed */
+  position: absolute;
+}
+
+.custom-quote::before {
+  top: -0.2em; /* Adjust vertical positioning */
+  left: -0.5em; /* Adjust horizontal positioning */
+}
+
+.custom-quote::after {
+  bottom: -0.2em; /* Adjust vertical positioning */
+  right: -0.5em; /* Adjust horizontal positioning */
+}
+
+</style>
+</head>
+<body>
+
+<blockquote class="custom-quote">
+  <p>This is a custom styled inline quotation.</p>
+</blockquote>
+
+</body>
+</html>
